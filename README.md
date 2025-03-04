@@ -48,25 +48,32 @@ diabetes_prediction
 
 ## **Installation**
 
-1. Anaconda
-xxxx
+#### Anaconda installation
+1. Step 1:
+```bash
+Use this format for any code 
+```
 
-2. Docker
-xxxx
+#### Docker installation
+Describe steps here
 
+1. Step 1:
+```bash
+Use this format for any code 
+```
 ---
 
 ## **Environment Requirements**
 
 The application was built and tested using the following software environment:
 
-- **Operating System**: Ubuntu 22.04.5 LTS (Jammy)
-- **Python**: 3.10.12
-- **Matplotlib**: 3.10.12
-- **Numpy**: 3.10.12
-- **Seaborn**: 3.10.12
-- **Os**: 3.10.12
-- **Streamlit**: 3.10.12
+- **Operating System**:
+- **Python**:
+- **Matplotlib**:
+- **Numpy**:
+- **Seaborn**:
+- **Os**:
+- **Streamlit**:
 
 ---
 
