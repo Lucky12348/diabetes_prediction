@@ -1,4 +1,4 @@
-# **ML Diabetes prediction Webapp**
+# **ML Diabetes Prediction Application**
 ### **Short description here**
 
 **Long description here**
@@ -36,7 +36,7 @@ diabetes_prediction
 │   │   └── TAIPEI_diabetes.csv
 ├── streamlit_app/
 │   ├── modules/
-│   │   └── main_code.py
+│   │   └── main.py
 │   ├── pages/
 │       └── 01_DiabetesPredictor.py
 ├── LICENSE
@@ -49,7 +49,7 @@ diabetes_prediction
 ## **Installation**
 
 #### Anaconda installation
-1. Step 1:
+1. **Step 1:**
 ```bash
 Use this format for any code 
 ```
@@ -57,7 +57,7 @@ Use this format for any code
 #### Docker installation
 Describe steps here
 
-1. Step 1:
+1. **Step 1:**
 ```bash
 Use this format for any code 
 ```
