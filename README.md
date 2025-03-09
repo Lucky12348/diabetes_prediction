@@ -24,7 +24,7 @@
 
 ## **Video demonstration**
 
-[![Title of the video here](image/gif link here)](yt link here "See the Demo")
+Embeded video here
 
 ---
 
@@ -33,13 +33,19 @@
 diabetes_prediction
 ├── assets/
 │   ├── data/
-│   │   └── TAIPEI_diabetes.csv
-├── streamlit_app/
+│       └── TAIPEI_diabetes.csv
+│
+├── docs/
+│   └── preliminary_notes.md
+│
+├── tests/
+│
+├── webapp/
 │   ├── modules/
 │   │   └── main.py
 │   ├── pages/
-│       └── 01_DiabetesPredictor.py
-├── LICENSE
+│       └── diabetes_predictor.py
+│
 ├── README.md
 └── requirements.txt
 ```
