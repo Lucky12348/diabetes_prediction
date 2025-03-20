@@ -19,10 +19,19 @@ Here's what I'm going to do step by step in my book.
 1. examine variable distributions
 2. check for anomalies
 
-# Correlation
--  get typical and extreme values
+</br>
 
-## Relationship
-1. check if a variable has a significant impact
-2. and finally to get the characteristics that are important for predicting
+# Prepare the model
 
+## data standardization
+1. get the correlation with diabetic
+2. if datas have low correlation ? interactions between variables
+3. standardization and save
+
+## Create model
+1. logistic regression
+2. Random forest
+3. XGBoost
+
+## Compare the performances
+use metric like F1-Score ore Accurancy to get the best model
