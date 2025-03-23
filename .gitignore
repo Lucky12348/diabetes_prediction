@@ -1,3 +1,4 @@
 *.docx
 Livrables/
 data_analysis/assets/data/PIMA.csv
+__pycache__/helpers.cpython-39.pyc
