@@ -42,6 +42,26 @@ To set up the project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Lucky12348/diabetes_prediction.git
+   ```
+2. **Create and activate a virtual environment**:
+
+   **Linux**:
+   ```bash
+   python3 -m venv env
+   source env/bin/activate
+   ```
+
+   **Windows**:
+   ```bash
+   python -m venv env
+   .\env\Scripts\activate
+   ```
+
+3. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 ## Start the web project
 ```bash
 cd WebApp
