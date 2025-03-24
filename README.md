@@ -6,7 +6,7 @@ This project aims to build a machine learning model to predict the diabetic outc
 
 ## Dataset
 
-The [dataset](https://github.com/Lucky12348/diabetes_prediction/blob/update/main/Data/TAIPEI_diabetes.csv) used in this project is derived from a study conducted at the Taipei Municipal Medical Center. It contains 8 features for each of the 15,000 women, including:
+The [dataset]() used in this project is derived from a study conducted at the Taipei Municipal Medical Center. It contains 8 features for each of the 15,000 women, including:
 
 - **Pregnancies**: Number of times pregnant
 - **PlasmaGlucose**: Plasma glucose concentration after 2 hours in an oral glucose tolerance test
@@ -42,3 +42,8 @@ To set up the project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Lucky12348/diabetes_prediction.git
+## Start the web project
+```bash
+cd WebApp
+streamlit run main.py
+```
