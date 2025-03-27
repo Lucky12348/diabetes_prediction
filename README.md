@@ -1,5 +1,5 @@
 # Predicting Diabetes Outcome for Women
-
+> **Disclaimer**: This is a student project and is intended for educational purposes only. It should not be used for actual medical diagnosis or to predict diabetes outcomes in real-world scenarios.
 ## Project Overview
 
 This project aims to build a machine learning model to predict the diabetic outcome for women based on a dataset of 15,000 women aged between 20 and 80. The goal is to develop machine learning, from exploratory data analysis to model deployment, and create a web application that can predict whether a woman is likely to have diabetes based on input features.

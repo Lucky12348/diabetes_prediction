@@ -19,12 +19,12 @@ def run_ui():
 
         with col1:
             pregnancies = st.number_input("Pregnancies", min_value=0, step=1)
-            glucose = st.number_input("Plasma Glucose", min_value=0.0)
-            pressure = st.number_input("Diastolic Blood Pressure (mm Hg)", min_value=0.0)
-            thickness = st.number_input("Triceps Skin Fold Thickness (mm)", min_value=0.0)
+            glucose = st.number_input("Plasma Glucose", min_value=0)
+            pressure = st.number_input("Diastolic Blood Pressure (mm Hg)", min_value=0)
+            thickness = st.number_input("Triceps Skin Fold Thickness (mm)", min_value=0)
 
         with col2:
-            insulin = st.number_input("2-Hour Serum Insulin (mu U/ml)", min_value=0.0)
+            insulin = st.number_input("2-Hour Serum Insulin (mu U/ml)", min_value=0)
             bmi = st.number_input("Body Mass Index (BMI)", min_value=0.0)
             pedigree = st.number_input("Diabetes Pedigree Function", min_value=0.0)
             age = st.number_input("Age", min_value=0, step=1)
