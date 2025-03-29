@@ -71,13 +71,25 @@ diabetes_prediction
 
 ## Installation
 
-To set up the project locally, follow these steps:
+To set up the project locally, you can choose between using **Conda** or a **virtual environment with pip**.
 
-1. **Clone the repository**:
+**Clone the repository**:
    ```bash
    git clone https://github.com/Lucky12348/diabetes_prediction.git
+   cd diabetes_prediction
    ```
-2. **Create and activate a virtual environment**:
+### Option 1: Using Conda
+
+
+-  **Create and activate the environment**:
+   ```bash
+   conda create --name diabetes_env --file conda-requirements.txt
+   conda activate diabetes_env
+   ```
+
+### Option 2: Using pip and virtualenv
+
+1. **Create and activate a virtual environment**:
 
    **Linux**:
    ```bash
@@ -91,7 +103,7 @@ To set up the project locally, follow these steps:
    .\env\Scripts\activate
    ```
 
-3. **Install the required dependencies**:
+2. **Install the required dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
