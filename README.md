@@ -50,10 +50,12 @@ diabetes_prediction
 │   └── women_diabetes_prediction_report.pdf
 │
 ├── WebApp/
-│   ├── modules/
-│   │   └── main.py
-│   ├── pages/
-│       └── diabetes_predictor.py
+│   ├── app/
+│   │   ├── api.py
+│   │   ├── model_loader.py
+│   │   ├── predictor.py
+│   │   └── ui.py
+│   └── main.py
 │
 ├── README.md
 └── requirements.txt
