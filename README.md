@@ -22,7 +22,7 @@ The target variable is **Diabetic**, which indicates whether diabetes was diagno
 1. The user inserts medical record data.
 2. A Logistic Regression model, trained on the above-mentionned dataset assesses the risk of the user of being in the diabetic or non-diabetic risk group.
 
-## **Video demonstration**
+## **GIF demonstration**
 
 ![](https://i.postimg.cc/0yNS8SKT/diabetic.gif)   ![](https://i.postimg.cc/wTgfQwnD/non-diabetic.gif)
 
