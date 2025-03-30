@@ -4,13 +4,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from app.model_loader import load_model
+from app.model_loader import load_model, load_scaler
 from app.predictor import DiabetesPredictor
 import threading
 import uvicorn
 
 model = load_model()
-predictor = DiabetesPredictor(model)
+scaler = load_scaler()
+predictor = DiabetesPredictor(model, scaler)
 
 app = FastAPI()
 
@@ -20,10 +21,19 @@ app.add_middleware(
     allow_methods=["*"], allow_headers=["*"]
 )
 
+def encode_bmi_category(bmi):
+    if bmi < 18.5:
+        return 0  # underweight
+    elif bmi < 25:
+        return 1  # normal weight
+    elif bmi < 30:
+        return 2  # overweight
+    elif bmi < 35:
+        return 3  # obese
+    else:
+        return 4  # severely obese
+
 # data model for API
-############################################
-# change the type of input 
-############################################
 class PatientData(BaseModel):
     Pregnancies: int
     PlasmaGlucose: int
@@ -37,7 +47,9 @@ class PatientData(BaseModel):
 # endpoint for prediction
 @app.post("/predict")
 def predict(data: PatientData):
-    prediction = predictor.predict(data.model_dump())
+    patient_dict = data.model_dump()
+    patient_dict["bmi_category"] = encode_bmi_category(patient_dict["BMI"])
+    prediction = predictor.predict(patient_dict)
     return {"prediction": prediction}
 
 # function to run the API

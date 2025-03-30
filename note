@@ -1,0 +1,23 @@
+
+Diabetic```{
+  "Pregnancies": 9,
+  "PlasmaGlucose": 103,
+  "DiastolicBloodPressure": 78,
+  "TricepsThickness": 25,
+  "SerumInsulin": 304,
+  "BMI": 29.58,
+  "DiabetesPedigree": 1.28,
+  "Age": 43
+}```
+non diabet
+```
+{
+  "Pregnancies": 1,
+  "PlasmaGlucose": 85,
+  "DiastolicBloodPressure": 59,
+  "TricepsThickness": 27,
+  "SerumInsulin": 35,
+  "BMI": 42.60,
+  "DiabetesPedigree": 0.54,
+  "Age": 22
+}

@@ -1,8 +1,20 @@
 """contains the code for the web application user interface"""
 
 import streamlit as st
-from app.model_loader import load_model
+from app.model_loader import load_model, load_scaler
 from app.predictor import DiabetesPredictor
+
+def encode_bmi_category(bmi):
+    if bmi < 18.5:
+        return 0  # Underweight
+    elif bmi < 25:
+        return 1  # Normal weight
+    elif bmi < 30:
+        return 2  # Overweight
+    elif bmi < 35:
+        return 3  # Obese
+    else:
+        return 4  # Severely obese
 
 def run_ui():
 
@@ -11,7 +23,8 @@ def run_ui():
 
     # load model
     model = load_model()
-    predictor = DiabetesPredictor(model)
+    scaler = load_scaler()
+    predictor = DiabetesPredictor(model,scaler)
 
     # form in 2 columns & input
     with st.form("diabetes_form"):
@@ -32,6 +45,8 @@ def run_ui():
         submitted = st.form_submit_button("Predict Risk")
 
     if submitted:
+        bmi_category = encode_bmi_category(bmi)
+        
         input_data = {
             "Pregnancies": pregnancies,
             "PlasmaGlucose": glucose,
@@ -40,7 +55,8 @@ def run_ui():
             "SerumInsulin": insulin,
             "BMI": bmi,
             "DiabetesPedigree": pedigree,
-            "Age": age
+            "Age": age,
+            "bmi_category": bmi_category
         }
 
         if sum(input_data.values()) == 0:
