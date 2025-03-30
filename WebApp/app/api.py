@@ -21,12 +21,15 @@ app.add_middleware(
 )
 
 # data model for API
+############################################
+# change the type of input 
+############################################
 class PatientData(BaseModel):
     Pregnancies: int
-    PlasmaGlucose: float
-    DiastolicBloodPressure: float
-    TricepsThickness: float
-    SerumInsulin: float
+    PlasmaGlucose: int
+    DiastolicBloodPressure: int
+    TricepsThickness: int
+    SerumInsulin: int
     BMI: float
     DiabetesPedigree: float
     Age: int
