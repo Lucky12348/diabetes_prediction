@@ -111,3 +111,12 @@ streamlit run main.py
 ## ⚠️ **Disclaimer**
 
 **This application is developed as part of an academic machine learning project, aimed at showcasing proficiency in machine learning techniques. It is not intended to offer medical advice and should not be used as a basis for any medical decision-making.**
+
+## Contributors
+Thanks to 
+[@AnnaFL-DSTI](https://github.com/AnnaFL-DSTI)
+[ernest-cyganowski](https://github.com/ernest-cyganowski)
+[malakboudaa](https://github.com/malakboudaa)
+[MarcoDainese](https://github.com/MarcoDainese)
+[Lucky12348](https://github.com/Lucky12348)
+for their valuable contributions to this project.
