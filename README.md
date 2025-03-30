@@ -17,19 +17,10 @@ The dataset used in this project is derived from a study conducted at the Taipei
 
 The target variable is **Diabetic**, which indicates whether diabetes was diagnosed (1) or not (0).
 
-
-## **Key Features**
-1. x
-2. x
-3. x
-4. x
-
 ## **How It Works**
 
 1. The user inserts medical record data.
-2. x
-3. x
-4. x
+2. A Logistic Regression model, trained on the above-mentionned dataset assesses the risk of the user of being in the diabetic or non-diabetic risk group.
 
 ## **Video demonstration**
 
@@ -42,6 +33,7 @@ The target variable is **Diabetic**, which indicates whether diabetes was diagno
 diabetes_prediction
 ├── Data/
 │   └── TAIPEI_diabetes.csv
+│   └── pima_indian_dataset.csv
 │
 ├── Notebooks/
 │   └── data_analysis.ipynb
@@ -59,6 +51,7 @@ diabetes_prediction
 │
 ├── README.md
 └── requirements.txt
+└── conda-requirements.txt
 
 ```
 * **Data/**: contains the dataset used in the project.
@@ -67,6 +60,7 @@ diabetes_prediction
 * **WebApp/**: contains the code for the web application built using FastAPI and Streamlit.
 * **README.md**: provides an overview of the project.
 * **requirements.txt**: lists all the dependencies required to run the project.
+* **conda-requirements.txt**: lists all the dependencies required to run the project using Conda distribution.
 
 
 ## Installation
@@ -113,19 +107,6 @@ To set up the project locally, you can choose between using **Conda** or a **vir
 cd WebApp
 streamlit run main.py
 ```
-
-## **Environment Requirements**
-
-The application was built and tested using the following software environment:
-
-- **Operating System**:
-- **Python**:
-- **Matplotlib**:
-- **Numpy**:
-- **Seaborn**:
-- **Os**:
-- **Streamlit**:
-
 
 ## ⚠️ **Disclaimer**
 
