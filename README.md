@@ -24,7 +24,7 @@ The target variable is **Diabetic**, which indicates whether diabetes was diagno
 
 ## **Video demonstration**
 
-![](https://media.tenor.com/ZPHHiCRxrlsAAAAj/happy-happy-happy-cat.gif)
+![](https://i.postimg.cc/0yNS8SKT/diabetic.gif)   ![](https://i.postimg.cc/wTgfQwnD/non-diabetic.gif)
 
 
 ## Project Structure
